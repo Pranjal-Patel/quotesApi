@@ -20,7 +20,7 @@ app.get('/quote', (req, res) => {
 
 		$('div[id="carousel-quote-1"]').each(function () {
 			$(this).find('div > h1').each(function (index, element) {
-				quote['quote'].replace("“", `"`).replace("”", `"`) = $(element).text()
+				quote['quote'] = $(element).text()
 			})
 			$(this).find('div > p').each(function () {
 				quote['author'] = $(this).text()
